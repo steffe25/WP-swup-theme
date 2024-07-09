@@ -9,11 +9,11 @@ To make content made by spectra plugin, locate functions.php file and add all of
 
 # EXAMPLE
 
-add_action( 'wp_enqueue_scripts', 'enqueue_scripts_by_post_id' );
+add_action( 'wp_enqueue_scripts', 'enqueue_scripts_by_post_id' ); <br>
 function enqueue_scripts_by_post_id() { <br>
-    $post_ids = array(1, 2, 3, 4); // Add your post IDs here
-    foreach ( $post_ids as $post_id ) {
-        $post_assets_instance = new UAGB_Post_Assets( $post_id );
-        $post_assets_instance->enqueue_scripts();
-    }
-}
+    $post_ids = array(1, 2, 3, 4); // Add your post IDs here <br>
+    foreach ( $post_ids as $post_id ) { <br>
+        $post_assets_instance = new UAGB_Post_Assets( $post_id ); <br>
+        $post_assets_instance->enqueue_scripts(); <br>
+    } <br>
+} <br>
